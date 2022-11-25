@@ -1,0 +1,26 @@
+<!-- <div>
+  <h2>Present are Students</h2>
+  <ul class="students">
+  <li *ngFor="let student of products" >
+    <div ><img src="{{student.imgUrl}}" alt=""></div>
+  <span >{{student.price}}</span> {{student.name}}
+  </li>
+  </ul>
+
+</div> -->
+
+<div class="card-group" >
+  <div class="card" *ngFor="let data of products" >
+    <img class="card-img-top" src="{{data.imgUrl}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{data.name}} : ${{data.price}}</h5>
+      <p class="card-text">Descripion of each product</p>
+    </div>
+    <div class="card-footer">
+      <i class="bi bi-hand-thumbs-up-fill"></i>
+      <i class="bi bi-share"></i>
+    </div>
+  </div>
+ 
+ 
+</div>

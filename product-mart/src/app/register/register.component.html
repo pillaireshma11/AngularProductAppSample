@@ -1,0 +1,29 @@
+
+<!-- Reactive Form -->
+<div class="wrapper">
+    <div class="logo">
+        <img src="https://cdn.pixabay.com/photo/2022/01/11/21/48/link-6931554_1280.png" alt="">
+    </div>
+    <div class="text-center mt-4 name">
+    <Fieldset>Register</Fieldset>
+    </div>
+    <form class="p-3 mt-3" [formGroup]="userGroup">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="text" class="form-control" id="userName" formControlName="name"  placeholder="Full Name" required>
+          
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="text" class="form-control" id="userName" formControlName="email"  placeholder="Email">
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            <input type="password" class="form-control" id="pwd" formControlName="password"  placeholder="Password">
+        </div>
+        <button class="btn mt-3" (click)="login()">Login</button>
+    </form>
+    <!-- <div class="text-center fs-6">
+        <a href="#">Forget password?</a> or <a routerLink="/register">Sign up</a>
+    </div> -->
+</div>
